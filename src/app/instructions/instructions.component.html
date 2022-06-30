@@ -1,0 +1,19 @@
+<h2>How To Play The Game</h2> 
+<span class="section-label">Number of Players:</span><span>{{gameContent.instructions.players}}</span><br><br>
+<span class="section-label">Description</span>
+
+<div [innerHTML]="gameContent.instructions.description"></div>
+
+<span class="section-label">Objective</span>
+<p>{{gameContent.instructions.objective}}</p>
+<span class="section-label">Setup</span>
+<!-- <div class="setup-container">
+    <div [innerHTML]="gameContent.instructions.setup"></div>
+    <img class="setup-img" src="/assets/images/game-data-images/{{gameContent.instructions.setupImgFile}}"></div>
+
+ <br> </div>-->
+ <div [innerHTML]="gameContent.instructions.setup"></div>
+ <img class="setup-img" src="/assets/images/game-data-images/{{gameContent.instructions.setupImgFile}}">
+<br>
+<span class="section-label">Game Play</span> 
+<div [innerHTML]="gameContent.instructions.rules" class="game-play-section"></div>

@@ -1,0 +1,87 @@
+mat-tab-group.mat-tab-group.game-info-nav.mat-primary {
+    background-color: var(--gold);
+    height: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+/* .mat-tab-group, mat-tab-label {
+    
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    
+} */
+.banner {
+    height: 200px;
+    width: 100%;
+    background-image: url('/assets/images/gradient.jpg');
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;  
+  }
+/* 
+.game-info-tab {
+    border: 2px solid var(--grape);
+    display: inline-block;
+    padding: 1em;
+    width: 33%;
+text-align: center;
+color: var(--grape);
+text-decoration: none;
+}
+.game-info-tab:hover {
+    border: 2px solid var(--cat-tail);
+    display: inline-block;
+
+color: var(--cat-tail);
+text-decoration: underline;
+}
+.game-info-tab:active {
+    border-bottom: 2px solid var(--cat-tail);
+    display: inline-block;
+background-color: var(--cat-tail);
+color: var(--cream);
+text-decoration: none;
+font-weight: 700;
+} */
+.page-content {
+    background-color: var(--cat-tail);
+    min-height: 500px;
+    color: var(--cream)
+
+}
+.game-info-nav-container {
+    max-width: 800px;
+}
+.mat-tab-labels {
+    background: var(--butter) !important;
+}
+.mat-tab-label-active {
+background-image: linear-gradient(#ffecaa, #3d015f );
+color: white;
+}
+.cdk-focused, .cdk-mouse-focused, .mat-tab-label:focus:not(.mat-tab-disabled) {
+    opacity: .6 !important;
+}
+.mat-tab-body-content {
+    background: var(--grape);
+    color: var(--cream);
+    min-height: 500px;
+    border-top: 3px solid black;
+    height: 99%;
+    padding: 0 1.5em;
+}
+.game-title {
+    width: 50%;
+    background-color: var(--chocolate);
+    opacity: .5;
+    display:inline-block;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+}
+.game-title h2 {
+    font-size: 45px;
+    position: relative;
+    top: 20%;
+    color: var(--cream)
+}

@@ -1,0 +1,31 @@
+.banner {
+    height: 350px;
+    width: 100%;
+    background-image: url('/assets/images/gradient.jpg');
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;  
+  }
+  .title {
+    width: 50%;
+    background-color: var(--chocolate);
+    opacity: .5;
+    display:inline-block;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    color: var(--cream)
+}
+.title h2 {
+    font-size: 45px;
+    position: relative;
+    top: 10%;
+    
+}
+.page-content {
+    background-color: var(--grape);
+    min-height: 500px;
+    color: var(--cream);
+    border-top: 3px solid black;
+
+}

@@ -1,0 +1,11 @@
+// mat-palette accepts $palette-name, main, lighter and darker variants
+$marshbird-theme-primary: mat-palette($mat-indigo, 700, 300, 900);
+$marshbird-theme-accent: mat-palette($mat-light-blue);
+$marshbird-theme-warn: mat-palette($mat-deep-orange, A200);
+
+// create theme (use mat-dark-theme for themes with dark backgrounds)
+$marshbird-theme: mat-dark-theme(
+    $marshbird-theme-primary,
+    $marshbird-theme-accent,
+    $marshbird-theme-warn
+);
