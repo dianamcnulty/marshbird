@@ -7,7 +7,7 @@ import { GAME_DATA } from './game-data';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-marshbird';
+  title = 'marshbird';
   gameNav: Array <{
     id: string;
     name: number;
