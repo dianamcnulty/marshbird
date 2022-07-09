@@ -1,13 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+
+@use '@angular/material' as mat;
+@import '@angular/material/theming';
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Griffy&display=swap');
+@include mat-core();
+@import './pallette.scss';
+
+$mat-theming-primary: mat.define-palette($md-shiraz);
+$mat-theming-accent: mat.define-palette($md-shiraz);
+$mat-theming-warn: mat.define-palette($md-shiraz);
+
+$mat-theming-theme: mat.define-light-theme($mat-theming-primary, $mat-theming-accent, $mat-theming-warn);
+@include mat.all-component-themes($mat-theming-theme);
 :root {
-    // --grape: #3d015f;
-    // --gold: #ffd955;
-    // --cat-tail: #6b3500;
-    // --butter: #ffecaa;
-    // --cream: #fff6d4;
-    // --chocolate: #271503;
-        --grape: #3e0421;
+    --grape: #3e0421;
     --gold: #ffd955;
     --cat-tail: #6a3501;
     --butter: #feecac;
@@ -17,7 +22,7 @@
 
 html,
 body {
-    height: 100%;
+    min-height: 100vh;
 }
 
 
@@ -33,5 +38,5 @@ a {
     color: white;
 }
 .game-square {
-    height:10px;
+    height:40px;
 }
