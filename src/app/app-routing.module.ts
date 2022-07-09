@@ -6,6 +6,7 @@ import { LandingComponent } from './landing/landing.component';
 
 const routes: Routes = [
   { path: 'game/:gameid', component: GameInfoComponent},
+  { path: 'game/:gameid/:tab', component: GameInfoComponent},
   { path: '', component: LandingComponent,
 // children: [
 //   {path: 'game/:gameid', component: GameInfoComponent}

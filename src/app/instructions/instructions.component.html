@@ -1,4 +1,4 @@
-<h2>How To Play The Game</h2> 
+<h2>How To Play The Game</h2>
 <span class="section-label">Number of Players:</span><span>{{gameContent.instructions.players}}</span><br><br>
 <span class="section-label">Description</span>
 
@@ -12,8 +12,16 @@
     <img class="setup-img" src="/assets/images/game-data-images/{{gameContent.instructions.setupImgFile}}"></div>
 
  <br> </div>-->
- <div [innerHTML]="gameContent.instructions.setup"></div>
- <img class="setup-img" src="/assets/images/game-data-images/{{gameContent.instructions.setupImgFile}}">
+<div [innerHTML]="gameContent.instructions.setup"></div>
+<img class="setup-img" src="/assets/images/game-data-images/{{gameContent.instructions.setupImgFile}}">
 <br>
-<span class="section-label">Game Play</span> 
+<span class="section-label">Game Play</span>
 <div [innerHTML]="gameContent.instructions.rules" class="game-play-section"></div>
+<div>
+    <p>
+        As with most ancient games, there are many different interpretations to the rules, and this is just one version
+        that you can play. There are many other variations that you can try until you find your favorite, but here is
+        one version to get you started. Just make sure that when you play with other people who are familiar with the
+        game, you agree on a set of rules before you start to avoid any hard feelings.
+    </p>
+</div>

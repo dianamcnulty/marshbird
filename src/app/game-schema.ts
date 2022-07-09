@@ -18,11 +18,15 @@ export interface Inscructions {
 }
 export interface History {
   story: string;
-  historyImg: string;
+  historyImg: imgObj;
 }
 export interface PurchaseDetails {
   productDescription: string;
   etsyURL: string | undefined;
   price: string | undefined;
   imgPaths: Array<string> | undefined;
+}
+export interface imgObj {
+  path: string, //starting from assets/images/
+  alt: string
 }
