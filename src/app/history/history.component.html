@@ -1,4 +1,7 @@
 <h2>The Story Behind {{gameContent.name}}</h2> 
-<div [innerHTML]="gameContent.history.story"></div>
+<div class="flex-container">
+    <div class="story-box" [innerHTML]="gameContent.history.story"></div>
+<img *ngIf="gameContent.history.historyImg"  alt="{{gameContent.history.historyImg.alt}}" src="/assets/images/{{gameContent.history.historyImg.path}}">
+</div>
 
 

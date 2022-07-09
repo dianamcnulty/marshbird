@@ -1,0 +1,22 @@
+.flex-container {
+    display: flex;
+}
+.story-box {
+    padding: 0 25px;
+}
+img {
+    padding: 15px;
+    max-width: 600px;
+}
+@media screen and (max-width: 1100px) {
+    img {
+        max-width: 400px;
+        max-height: 400px;
+
+    }
+}
+@media screen and (max-width: 950px) {
+    img {
+        display: none;
+    }
+}

@@ -1,7 +1,7 @@
 .banner {
     height: 350px;
     width: 100%;
-    background-image: url('/marshbird/assets/images/tablut-banner.jpg');
+    background-image: url('/assets/images/tablut-banner.jpg');
     background-size:     cover;                      
     background-repeat:   no-repeat;
     background-position: center center;  
