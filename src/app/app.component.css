@@ -1,11 +1,20 @@
 
 
 :host {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #333;
+    /* color: #333;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale; */
+    /* min-height: 100%; */
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    min-height: calc(100vh - 50px);
   }
 
   h1,
@@ -59,39 +68,6 @@
     object-fit: cover;
     max-height: 350px;
   }
-  /* .toolbar #twitter-logo {
-    height: 40px;
-    margin: 0 8px;
-  }
-
-  .toolbar #youtube-logo {
-    height: 40px;
-    margin: 0 16px;
-  }
-
-  .toolbar #twitter-logo:hover,
-  .toolbar #youtube-logo:hover {
-    opacity: 0.8;
-  } */
-
-  /* .content {
-    display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 960px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  svg.material-icons {
-    height: 24px;
-    width: auto;
-  } */
-/* 
-  svg.material-icons:not(:last-child) {
-    margin-right: 8px;
-  } */
-
   .card svg.material-icons path {
     fill: #888;
   }

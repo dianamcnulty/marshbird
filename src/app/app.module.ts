@@ -7,12 +7,14 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
+// import { MatCarouselModule } from '@ngbmodule/material-carousel';
 
 import { GameInfoComponent } from './game-info/game-info.component';
 import { HistoryComponent } from './history/history.component';
 import { InstructionsComponent } from './instructions/instructions.component';
 import { BuyGameComponent } from './buy-game/buy-game.component';
 import { LandingComponent } from './landing/landing.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { LandingComponent } from './landing/landing.component';
     HistoryComponent,
     InstructionsComponent,
     BuyGameComponent,
-    LandingComponent
+    LandingComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
