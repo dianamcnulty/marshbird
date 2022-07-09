@@ -24,9 +24,18 @@ export const GAME_DATA = {
       setupImgFile: 'fox-geese-setup.png'
     },
     history: {
-      story: "I don't know... something about corrupt churches?"
+      story: `<p>Fox and Geese is a very old game that back to the Middle Ages in Northern Europe, especially Scandenavia and the British Isles. However, some believe it could be even older than that and may be the game referred to in the Norse "Grettis Saga."  From the 1400's onward it was a popular game amongst British royalty.
+      </p>
+      <p>
+      An interesting side note: the fox symbolism did have some cultural significance in europe during the middle ages. Foxes and geese were depicted in stories such as "Reynard the Fox" as well as artwork of the time. The proverb "When the fox preaches, look to your geese" was born from one of these stories, and warns to be wary of hidden agendas in authority figures.
+      </p>`,
+      historyImg: {
+        path: 'game-data-images/Reynard_the_Fox.png',
+        alt: 'medieval painting of Reynard the Fox preaching to geese'
+      }
     },
     purchase: {
+      etsyURL: "https://www.etsy.com/shop/MarshBirdGames",
       productDescription: "Welcome to the circus of value...."
     }
   },
@@ -35,21 +44,48 @@ export const GAME_DATA = {
     name: 'Tablut',
     instructions: {
       players: 2,
-      description: "Tablut... Tafle... Hnefetafl... and stuff...",
-      setup: " <p>set up the game .....</p>",
-      rules: "<p>make up some rules</p>" +
-        "<ul>" +
-        "<li>don't talk about fight club</li>" +
-        "<li>no explosions in the house</li>" +
-        "<li>go</li>" +
-        "</ul>" ,
-      objective: "Win",
-      // setupImgFile: 'fox-geese-setup.png'
+      description: "Tablut is a two player war game that evolved from Hnefetafl and other Tafl family games. It's classified as a war game, but it's played assymentrically. Which means that each player has a different number of pieces and different objectives.",
+      setup: ` <p>
+      Each player has a different set of pieces. The player on the attacker side will have 16 matching pieces, and the defender will have 8 defenders and 1 king.
+</p><p>
+The board is set up with the king in the center square and the defenders 
+in a cross shape surrounding him.
+</p><p>
+The attackers form 4 triangles, centered on each edge of the board 
+as you see in the picture.
+      </p>`,
+      rules: `
+        <ul>
+        <li>The attacker moves first, and each player takes turns moving one piece at a time.</li>
+        <li>All pieces (including the king) can only move orthogonally (not diagonally) in a straight line. They can move any number of squares as long as another piece is not in the way. They can't jump over other pieces (similar to a rook in chess)</li>
+        <li>The central square is called the Throne, and no piece may occupy it except the King.</li>
+        <li>The central square is called the Throne, and no piece may occupy it except the King.</li>
+        <div>example:</div>
+        <img src="/assets/images/game-data-images/tablut-capture.png" alt="example of how to caputure a piece in Tablut">
+        <img src="/assets/images/game-data-images/tablut-nocapture.png" alt="demonstration of a Tablut piece that does not get captured">
+        <li>The king must be surrounded by all 4 sides in order to be captured. Or if the King is on the edge of the board or adjacent to the throne, he is captured if he is surrounded on the remaining 3 sides. </li>
+        <li>If the king is captured, the attackers win!</li>
+        <li>If the king reaches one of the 4 corners of the board, the defenders win!</li>
+        </ul>` ,
+      objective: "The object of the game for the defender player is to get his king to one of the 4 corners of the board. The goal for the attackers is to capture the king.",
+      setupImgFile: 'tablut-setup.png'
     },
     history: {
-      story: "I don't know... something about vikings and europe?"
+      story: `<p>Tablut is one of many variations of the “tafl” family of games. Tafl games are played on a grid, and are characterized by asymmetrical game play, which means each player has a different number of pieces, a different setup, and a different goal. These games fall into the larger category of “war games” which include other popular games such as chess and checkers. Evidence of tafl games dates back to around 400 AD which puts them some of the oldest games we know about.      
+      </p><p>
+      This family of games includes Norse game Hnefetafl which was played by the ancient Vikings. As with many aspects of viking culture, Hnefetafl spread to other parts of Europe over the centuries and evolved as it was adopted by other cultures including the Saxons. 
+      </p><p>
+      The gameplay of Tablut is very similar to Hnefetafl, however the board is smaller, being only 9x9. Because the board is smaller, the setup is more compact, and the number of pieces is smaller as well. Tablut was first written about in 1732 by a Swedish botanist named Linnaeus. According to his description the theme of the game is of a Swedish King who is defended by his loyal guards. They attempt to get him to safety while they fend off an attack by the Muscovites. 
+      </p>`,
+            historyImg: {
+        path: 'game-data-images/tafl_artifact.jpg',
+        alt: 'Tafl board artifact from the 1100s'
+      }
+    
     },
     purchase: {
+      etsyURL: "https://www.etsy.com/listing/1258841149/tablut-hnefatafl-board-game?click_key=75e277652c625ceffed144f93cce20fbdd606cb0%3A1258841149&click_sum=9000dd4f&ref=shop_home_active_1&frs=1",
+
       productDescription: "Welcome to the circus of value...."
     }
   },
@@ -139,9 +175,15 @@ export const GAME_DATA = {
       <p>The theme of the game, much like many other aspects of Egyptian life, revolves around the cycle of life and death. Senet translates to “passing” and the movement of the pieces along the board represents a souls journey though the afterlife as they attempt to unite with Re-Horakhty, the god of the rising sun.
       </p>
       <p> Unfortunately, the rules of the game have not survived, so historians and game experts have had to speculate on how to play based on the clues. Because of this, there are several variations out there, and the instructions on this site are just one of many versions you can choose from. Just make sure that if you're playing with someone who already knows the game, that you agree on the rules ahead of time.
-      </p><p>If you're interested in trying other versions, there are several videos and articles on the internet that describe different rules for the game.</p>`
+      </p><p>If you're interested in trying other versions, there are several videos and articles on the internet that describe different rules for the game.</p>`,
+      historyImg: {
+        path: 'game-data-images/Nefertari_playing_senet.jpg',
+        alt: 'Painting from the tomb of Queen Nefertari, depicting the queen playing Senet'
+      }
+    
     },
     purchase: {
+      etsyURL: "https://www.etsy.com/shop/MarshBirdGames",
       productDescription: "Welcome to the circus of value...."
     }
   }

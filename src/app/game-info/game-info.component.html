@@ -1,12 +1,12 @@
 <!-- <p>game-info works!</p> -->
-<div class="banner">
+<div class="banner" style="background-image: url('/assets/images/game-banners/{{gameContent.id}}.jpg');">
   <!-- <img src="/assets/images/gradient.jpg" alt="gold gradient"> -->
   <div class="game-title">
     <h2>{{gameContent.name}}</h2>
   </div>
 </div>
-<mat-tab-group mat-stretch-tabs class="game-info-nav-container">
-  <mat-tab class="game-tab" label="History">
+<mat-tab-group mat-stretch-tabs class="game-info-nav-container" [selectedIndex]="0">
+  <mat-tab  class="game-tab" label="History">
     <app-history [gameContent]="gameContent"></app-history>
   </mat-tab>
   <mat-tab class="game-tab" label="How To Play">
@@ -17,13 +17,3 @@
     <app-buy-game [gameContent]="gameContent"></app-buy-game>
   </mat-tab>
 </mat-tab-group>
-<!-- <div > -->
-<!-- <div class="game-info-tab"><a>History</a></div>
-    <div class="game-info-tab"><a>How to Play</a></div>
-    <div class="game-info-tab"><a>Get This Game</a></div> -->
-<!-- </div> -->
-
-<!-- 
-<div class="page-content">
-some info here or something.
-</div> -->

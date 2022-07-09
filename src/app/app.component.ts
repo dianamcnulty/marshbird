@@ -1,5 +1,6 @@
-import { Component, getModuleFactory, OnInit } from '@angular/core';
+import { Component, getModuleFactory, OnInit, OnChanges } from '@angular/core';
 import { GAME_DATA } from './game-data';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,16 +9,23 @@ import { GAME_DATA } from './game-data';
 })
 export class AppComponent {
   title = 'marshbird';
-  gameNav: Array <{
+  logoDisplay = true;
+  gameNav: Array<{
     id: string;
     name: number;
   }> = []
+  constructor(private route: ActivatedRoute, private router: Router) { }
   ngOnInit(): void {
     let game: any;
     for (game in GAME_DATA) {
-      console.log('game', game);
-      this.gameNav.push({name: GAME_DATA[game].name, id: game})
+      this.gameNav.push({ name: GAME_DATA[game].name, id: game });
     }
   }
-  
+  ngOnChanges(): void {
+    if (this.router.url === '/') {
+      this.logoDisplay = false;
+    } else {
+      this.logoDisplay = true;
+    }
+  }
 }
