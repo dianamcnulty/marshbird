@@ -1,0 +1,36 @@
+#photo-container {
+    height: 200px;
+}
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+.mat-stepper-horizontal{
+    background-color: var(--grape);;
+}
+.mat-horizontal-stepper-content {
+    background-color: var(--grape);
+    margin: auto;
+    text-align: center;
+}
+.mat-horizontal-stepper-header-container {
+    height: 50px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    background-color: var(--grape);
+}
+.mat-horizontal-content-container {
+    padding: 0;
+    margin: auto;
+}
+.step {
+    border: solid 2px yellowgreen;
+}
+.button-group
+    {
+        display: flex;
+        justify-content: space-evenly;
+    }

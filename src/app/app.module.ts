@@ -7,7 +7,10 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
+import {MatStepperModule} from '@angular/material/stepper';
 // import { MatCarouselModule } from '@ngbmodule/material-carousel';
+import {MatButtonModule} from '@angular/material/button';
+
 
 import { GameInfoComponent } from './game-info/game-info.component';
 import { HistoryComponent } from './history/history.component';
@@ -32,7 +35,9 @@ import { CarouselComponent } from './carousel/carousel.component';
     NoopAnimationsModule,
     MatTabsModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    MatStepperModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

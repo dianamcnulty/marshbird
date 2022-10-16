@@ -1,9 +1,19 @@
+
 <h2>How to Get This Game</h2> 
+<div class="buy-block">
+
+<div class="text-block">
 
 <p>Interested in buying a handmade recreation of this game? 
     The artisan behind MarshBird Games creates hand crafted board games and table games based on ancient and traditional designs. 
     Materials and techniques are carefully selected for each edition of each game, giving every one it's own unique character.
 </p>
-<!-- <app-carousel gameContent="gameContent"> -->
+
 <div [innerHTML]="gameContent.purchase.productDescription"></div>
 <p>If I have one in stock, you can get your own  {{gameContent.name}} game at the <a target="_blank" [href]="gameContent.purchase.etsyURL">MarshBird Games Etsy shop.</a></p>
+</div>
+<div *ngIf="gameContent.purchase.imageList" class="carousel-container">
+    <app-carousel [imageList]="gameContent.purchase.imageList"></app-carousel>
+
+</div>
+</div>

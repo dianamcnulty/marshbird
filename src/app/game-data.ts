@@ -24,7 +24,7 @@ export const GAME_DATA = {
       setupImgFile: 'fox-geese-setup.png'
     },
     history: {
-      story: `<p>Fox and Geese is a very old game that back to the Middle Ages in Northern Europe, especially Scandenavia and the British Isles. However, some believe it could be even older than that and may be the game referred to in the Norse "Grettis Saga."  From the 1400's onward it was a popular game amongst British royalty.
+      story: `<p>Fox and Geese is a very old game that dates back to the Middle Ages in Northern Europe, especially Scandinavia  and the British Isles. However, some believe it could be even older than that and may be the game referred to in the Norse "Grettis Saga."  From the 1400's onward it was a popular game amongst British royalty.
       </p>
       <p>
       An interesting side note: the fox symbolism did have some cultural significance in europe during the middle ages. Foxes and geese were depicted in stories such as "Reynard the Fox" as well as artwork of the time. The proverb "When the fox preaches, look to your geese" was born from one of these stories, and warns to be wary of hidden agendas in authority figures.
@@ -85,7 +85,24 @@ as you see in the picture.
     },
     purchase: {
       etsyURL: "https://www.etsy.com/listing/1258841149/tablut-hnefatafl-board-game?click_key=75e277652c625ceffed144f93cce20fbdd606cb0%3A1258841149&click_sum=9000dd4f&ref=shop_home_active_1&frs=1",
-
+      imageList: [
+        {
+        path: 'product-images/tablut/setup.jpg',
+        alt: 'handmade tafl game with pieces in starting position'
+        },
+        {
+          path: 'product-images/tablut/box.jpg',
+          alt: 'handmade tafl game board on an ornately decorated box'
+          },
+          {
+            path: 'product-images/tablut/interior.jpg',
+            alt: 'interior of tafl box with game pieces stored inside'
+            },
+            {
+              path: 'product-images/tablut/closeup.jpg',
+              alt: 'closeup of the hand made tablut game pieces'
+              }
+      ],
       productDescription: "Welcome to the circus of value...."
     }
   },

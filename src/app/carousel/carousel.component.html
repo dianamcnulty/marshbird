@@ -1,6 +1,71 @@
-<p>carousel works!</p>
-<div id='container'>
-<!-- try this: https://medium.com/showpad-engineering/angular-animations-lets-create-a-carousel-with-reusable-animations-81c0dd8847e8 -->
-  
-  
-  </div>
+<div id='photo-container'>
+  <mat-stepper #stepper class="stepper-block">
+    
+
+    <mat-step class="step" [completed]="false" *ngFor="let imgData of imageList">
+      <img src="/assets/images/{{imgData.path}}" alt="{{imgData.alt}}">
+      <div class="button-group">
+        <button *ngIf="imageList.indexOf(imgData) > 0" mat-icon-button color="accent" mat-button matStepperPrevious>
+          <mat-icon><span >
+              arrow_back_ios
+            </span></mat-icon>
+        </button>
+        <button *ngIf="imageList.indexOf(imgData) < imageList.length - 1" mat-icon-button color="accent" matStepperNext>
+          <mat-icon><span >
+              arrow_forward_ios
+            </span></mat-icon>
+        </button>
+      </div>
+      
+    </mat-step>
+<!--     
+    <mat-step class="step" [completed]="false" >
+      <div class="button-group">
+        <button mat-icon-button color="accent" matStepperNext>
+          <mat-icon><span >
+              arrow_forward_ios
+            </span></mat-icon>
+        </button>
+      </div>
+      <img src="/assets/images/product-images/tablut/IMG_6361.jpg">
+    </mat-step> -->
+   
+   
+   
+   
+<!--    
+    <mat-step class="step" [completed]="false">
+      <div class="button-group">
+        <button mat-icon-button color="accent" mat-button matStepperPrevious>
+          <mat-icon><span >
+              arrow_back_ios
+            </span></mat-icon>
+        </button>
+        <button mat-icon-button color="accent" mat-button matStepperNext>
+          <mat-icon><span >
+              arrow_forward_ios
+            </span></mat-icon>
+        </button>
+      </div>
+      <img src="/assets/images/product-images/tablut/IMG_6361a.jpg">
+    </mat-step>
+    <mat-step class="step" [completed]="false">
+      <div class="button-group">
+        <button mat-icon-button color="accent" mat-button matStepperPrevious>
+          <mat-icon><span >
+              arrow_back_ios
+            </span></mat-icon>
+        </button>
+        <button mat-icon-button color="accent" (click)="stepper.reset()">
+          <mat-icon><span >
+              arrow_forward_ios
+            </span></mat-icon>
+        </button>
+      </div>
+      <img src="/assets/images/product-images/tablut/IMG_6361a.jpg">
+    </mat-step> -->
+  </mat-stepper>
+
+</div>
+
+<ng-template matStepperIcon="number"></ng-template>

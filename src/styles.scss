@@ -6,7 +6,7 @@
 @import './pallette.scss';
 
 $mat-theming-primary: mat.define-palette($md-shiraz);
-$mat-theming-accent: mat.define-palette($md-shiraz);
+$mat-theming-accent: mat.define-palette($md-shiraz, 200, 50, 300 );
 $mat-theming-warn: mat.define-palette($md-shiraz);
 
 $mat-theming-theme: mat.define-light-theme($mat-theming-primary, $mat-theming-accent, $mat-theming-warn);

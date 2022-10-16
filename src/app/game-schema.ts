@@ -24,7 +24,7 @@ export interface PurchaseDetails {
   productDescription: string;
   etsyURL: string | undefined;
   price: string | undefined;
-  imgPaths: Array<string> | undefined;
+  imageList: Array<imgObj> | undefined;
 }
 export interface imgObj {
   path: string, //starting from assets/images/

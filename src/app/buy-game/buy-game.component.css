@@ -1,0 +1,15 @@
+.buy-block{
+    display: flex;
+    flex: space-around;
+}
+.carousel-container {
+    max-width: 50%;
+}
+.text-block {
+    padding: 0 15px;
+}
+@media screen and (max-width: 800px) {
+    .buy-block{
+        flex-direction:column
+    }
+}

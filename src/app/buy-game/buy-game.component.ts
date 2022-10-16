@@ -10,6 +10,7 @@ export class BuyGameComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log('game content', this.gameContent)
   }
 
 }
