@@ -32,3 +32,26 @@
 .splash-page {
     text-align: center;
 }
+.showcase-button  {
+    box-shadow: 2px 7px 15px -2px black;
+    margin: 15px;
+    background-color: var(--grape);
+    color: var(--butter);
+    border: none;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+.game-card {
+    margin: 10px;
+    background: var(--grape);
+    color: white;
+    font-family: griffy;
+}
+.subtitle {
+    color: var(--butter);
+    font-family: "Alegreya Sans", Garamond, "Times New Roman", Times, serif, sans-serif;
+}
+.mat-grid-tile-content {
+    align-items: flex-start !important;
+
+}

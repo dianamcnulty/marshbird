@@ -23,6 +23,7 @@ $mat-theming-theme: mat.define-light-theme($mat-theming-primary, $mat-theming-ac
 html,
 body {
     min-height: 100vh;
+    background-color: var(--grape);
 }
 
 

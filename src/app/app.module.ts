@@ -18,6 +18,8 @@ import { InstructionsComponent } from './instructions/instructions.component';
 import { BuyGameComponent } from './buy-game/buy-game.component';
 import { LandingComponent } from './landing/landing.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { CarouselComponent } from './carousel/carousel.component';
     MatMenuModule,
     MatIconModule,
     MatStepperModule,
-    MatButtonModule
+    MatButtonModule,
+    MatGridListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
