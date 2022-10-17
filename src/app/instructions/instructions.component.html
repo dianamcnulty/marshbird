@@ -13,7 +13,7 @@
 
  <br> </div>-->
 <div [innerHTML]="gameContent.instructions.setup"></div>
-<img class="setup-img" src="/assets/images/game-data-images/{{gameContent.instructions.setupImgFile}}">
+<img *ngIf="gameContent.instructions.setupImgFile" class="setup-img" src="/assets/images/game-data-images/{{gameContent.instructions.setupImgFile}}">
 <br>
 <span class="section-label">Game Play</span>
 <div [innerHTML]="gameContent.instructions.rules" class="game-play-section"></div>

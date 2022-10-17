@@ -35,8 +35,8 @@ export const GAME_DATA = {
       }
     },
     purchase: {
-      etsyURL: "https://www.etsy.com/shop/MarshBirdGames",
-      productDescription: "Welcome to the circus of value...."
+      etsyURL: "https://www.etsy.com/listing/1267959510/fox-and-geese-wooden-board-game",
+      productDescription: ""
     }
   },
   'tablut': {
@@ -77,33 +77,33 @@ as you see in the picture.
       </p><p>
       The gameplay of Tablut is very similar to Hnefetafl, however the board is smaller, being only 9x9. Because the board is smaller, the setup is more compact, and the number of pieces is smaller as well. Tablut was first written about in 1732 by a Swedish botanist named Linnaeus. According to his description the theme of the game is of a Swedish King who is defended by his loyal guards. They attempt to get him to safety while they fend off an attack by the Muscovites. 
       </p>`,
-            historyImg: {
+      historyImg: {
         path: 'game-data-images/tafl_artifact.jpg',
         alt: 'Tafl board artifact from the 1100s'
       }
-    
+
     },
     purchase: {
-      etsyURL: "https://www.etsy.com/listing/1258841149/tablut-hnefatafl-board-game?click_key=75e277652c625ceffed144f93cce20fbdd606cb0%3A1258841149&click_sum=9000dd4f&ref=shop_home_active_1&frs=1",
+      etsyURL: "https://www.etsy.com/listing/1258841149/tablut-hnefatafl-board-game",
       imageList: [
         {
-        path: 'product-images/tablut/setup.jpg',
-        alt: 'handmade tafl game with pieces in starting position'
+          path: 'product-images/tablut/setup.jpg',
+          alt: 'handmade tafl game with pieces in starting position'
         },
         {
           path: 'product-images/tablut/box.jpg',
           alt: 'handmade tafl game board on an ornately decorated box'
-          },
-          {
-            path: 'product-images/tablut/interior.jpg',
-            alt: 'interior of tafl box with game pieces stored inside'
-            },
-            {
-              path: 'product-images/tablut/closeup.jpg',
-              alt: 'closeup of the hand made tablut game pieces'
-              }
+        },
+        {
+          path: 'product-images/tablut/interior.jpg',
+          alt: 'interior of tafl box with game pieces stored inside'
+        },
+        {
+          path: 'product-images/tablut/closeup.jpg',
+          alt: 'closeup of the hand made tablut game pieces'
+        }
       ],
-      productDescription: "Welcome to the circus of value...."
+      productDescription: " "
     }
   },
   'senet': {
@@ -118,7 +118,7 @@ as you see in the picture.
       <li>
       The game pieces: Each player had 7 pieces.</li>
       <li>
-      The dice: This game is traditionally played with throwing sticks, but in the handmade version from MarshBird Games I include custom dice designed to give similar combinations to the traditional set of 3 throwing sticks. The reason I prefer dice is that it’s more random and harder to cheat. </li>
+      The dice: This game is traditionally played with throwing sticks, but in the handmade version from MarshBird Games, I include custom dice designed to give similar combinations to the traditional set of 3 throwing sticks. The reason I prefer dice is that it’s more random and harder to cheat. </li>
       <ul>
       `,
       setup: ` <p>Each player has 7 pieces, which are placed on the first 14 squares in an alternating pattern starting with the top left square.
@@ -197,11 +197,97 @@ as you see in the picture.
         path: 'game-data-images/Nefertari_playing_senet.jpg',
         alt: 'Painting from the tomb of Queen Nefertari, depicting the queen playing Senet'
       }
-    
+
     },
     purchase: {
-      etsyURL: "https://www.etsy.com/shop/MarshBirdGames",
-      productDescription: "Welcome to the circus of value...."
+      etsyURL: "https://www.etsy.com/listing/1251881594/senet-ancient-egyptian-board-game",
+      productDescription: ""
+    }
+  },
+  'mehen': {
+    id: 'mehen',
+    name: 'Mehen',
+    instructions: {
+      players: '2 - 6',
+      description: `
+      <ul>
+      <li>The board: The game board is made up of  a spiral in the shape of a snake. The number of squares is not standardized, game boards have been found ranging from 29 to 400 squares.
+      </li>
+      <li>
+      The game pieces: Each player has 1 lion and 6 warriors (pawns).</li>
+      <li>
+      The dice: This game is traditionally played with throwing sticks, but in the handmade version from MarshBird Games, I include custom dice designed to give similar combinations to the traditional set of 4 throwing sticks. The reason I prefer dice is that it’s more random and harder to cheat. </li>
+      <ul>
+      `,
+      setup: ` <p>Each player places their lion in the center of the board (on the snakes head) and the other pieces are kept off the board.
+      </p>`,
+      rules: `<p>You can decide who goes first however you'd like.</p>
+      <p><strong>Phase 1:</strong></p>
+      <ul>
+        <li>You must roll a 1 to move a piece onto the board. Place your piece onto the first space. </li>
+        <li>If you already have pieces on the board, roll the dice and choose a piece to move the number of spaces that you rolled, toward the head of the snake.</li>
+        <li>If you rolled a 1, you can choose to either: 
+          <ul> 
+            <li>Move another piece onto the board.</li>
+            <li>Move a piece forward 1 space.</li>
+            <li>Save the 1 for later (keep a tally on a piece of paper).</li>
+          </ul>
+        </li>
+        <li>Two pawns may not occupy the same square.</li>
+        <li>When you get to the head of the snake you must enter by exact count. You may use the 1's (one per turn) you saved earlier to enter the snakes head. </li>
+        <li>You must get all of your pawns to the into the head of the snake before you can release your lion.</li>
+        
+      </ul>
+      <p><strong>Phase 2:</strong></p>
+        <ul>
+          <li>Once all of your pieces have made it to the center, you may now release the lion and move all of your pawns back to the tail of the snake.</li>
+          <li>Lions move the same way as pawns, except that if they land on a square occupied by another player's pawn, you capture the other player's piece. </li>
+          <li>Lions can not eat other lions, or occupy the same square as another lion or your own pawn.</li>
+          <li>Lions can move in either direction.</li>
+          <li>The goal is to get as many pawns back to the tail without being eaten, and to have your lion eat as many opponents as possible.</li>
+          <li>Just as with phase one, you may save your rolled 1's for later use.</li>
+          <li>The final space on the tail must be entered by exact number, similar to the head of the snake.</li>
+          <li>Once you reach the final space you remove the piece from the board. That piece is safe from being eaten by any lions.</li>
+          <li>The game is over when there are no more pawns on the board. </li>
+        </ul>
+        <p><strong>Declaring the Winner:</strong></p>
+        <p>Each player counts the number of pieces that their lions captured,  the winner is the person with the most captured pieces. </p>
+        <p>Tie-breakers are given to the person with the most number of pawns that made it back to the safety without being eaten.</p>` ,
+      objective: "The winner is the person whos lion has eaten the most pawns.",
+      // setupImgFile: ''
+    },
+    history: {
+      story: `<p>Mehen is an Ancient Egyptian board game for 2-6 players and is one of the oldest known board games. Mehen is the name of a snake that accompanies Ra in his nightly voyage through the underworld. He is a protective deity, and assists Ra in his battles against another snake deity, Apep. 
+      </p>
+      <p>The original rules of the game have been lost to history, but archaeologists and historians have been able to piece together a set of potential rules through research and discoveries of similar known games of the time period in that region. This version of the rules are based on another game known as the hyena game. The premise of the two games are different, but the mechanics setup are very similar. In fact, you can actually play the hyena game with the same game set. This is just one of many other variations out there that you can also try.      </p>
+      </p><p>If you're interested in trying other versions, there are several videos and articles on the internet that describe different rules for the game.</p>`,
+      historyImg: {
+        path: 'game-data-images/mehen-artifact.jpg',
+        alt: 'Game of the Snake, Mehen with gamestones; Limestone; Early Dynastic Period (ca. 3.000 BC)'
+      }
+
+    },
+    purchase: {
+      etsyURL: "https://www.etsy.com/listing/1286099513/mehen-board-game-leather-board-and",
+      productDescription: " ",
+      imageList: [
+        {
+          path: 'product-images/mehen/mehen-with-box.jpg',
+          alt: 'handmade mehen game with an ornately decorated box'
+        },
+        {
+          path: 'product-images/mehen/mehen-pieces.jpg',
+          alt: 'closeup of the pieces of the mehen game'
+        },
+        {
+          path: 'product-images/mehen/mehen-box-pieces.jpg',
+          alt: 'interior of mehen box with game pieces stored inside'
+        },
+        {
+          path: 'product-images/mehen/mehen-box-art.jpg',
+          alt: 'closeup of the carving on the cover of the Mehen box'
+        }
+      ],
     }
   }
 }

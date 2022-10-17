@@ -46,6 +46,13 @@
     background: var(--grape);
     color: white;
     font-family: griffy;
+    
+        box-shadow: 2px 7px 15px -2px black;
+        min-height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 90%;
 }
 .subtitle {
     color: var(--butter);
@@ -54,4 +61,8 @@
 .mat-grid-tile-content {
     align-items: flex-start !important;
 
+}
+.card-header {
+    padding: 10px 0 0;
+    background: rgba(0, 0, 0, .8 );
 }
