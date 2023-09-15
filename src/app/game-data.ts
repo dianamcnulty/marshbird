@@ -268,7 +268,7 @@ as you see in the picture.
 
     },
     purchase: {
-      etsyURL: "https://www.etsy.com/listing/1286099513/mehen-board-game-leather-board-and",
+      etsyURL: "https://marshbirdgames.etsy.com",
       productDescription: " ",
       imageList: [
         {

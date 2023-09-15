@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'game/:gameid', component: GameInfoComponent},
   { path: 'game/:gameid/:tab', component: GameInfoComponent},
   { path: '', component: LandingComponent},
+  { path: 'defaultsite', redirectTo: ''},
   { path: '**', redirectTo: '' }
 ];
 

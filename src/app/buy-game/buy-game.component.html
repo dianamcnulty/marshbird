@@ -10,7 +10,7 @@
 </p>
 
 <div [innerHTML]="gameContent.purchase.productDescription"></div>
-<p>If I have one in stock, you can get your own  {{gameContent.name}} game at the <a target="_blank" [href]="gameContent.purchase.etsyURL">MarshBird Games Etsy shop.</a></p>
+<p>If I have one in stock, you can get your own  {{gameContent.name}} game at the <a target="_blank" href="https://marshbirdgames.etsy.com">MarshBird Games Etsy shop.</a></p>
 </div>
 <div *ngIf="gameContent.purchase.imageList" class="carousel-container">
     <app-carousel [imageList]="gameContent.purchase.imageList"></app-carousel>
