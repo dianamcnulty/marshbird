@@ -49,10 +49,11 @@
     
         box-shadow: 2px 7px 15px -2px black;
         min-height: 200px;
-    background-size: contain;
+    background-size:  cover;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: top;
     width: 90%;
+    padding: 0;
 }
 .subtitle {
     color: var(--butter);
