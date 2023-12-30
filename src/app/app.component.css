@@ -42,7 +42,8 @@
     height: 60px;
     display: flex;
     align-items: center;
-    background: black;
+    /* background: #111111; */
+    background: linear-gradient(180deg, #111111 85%, #4e1835 100%);
     color: black;
     font-weight: 600;
     height: 80px;

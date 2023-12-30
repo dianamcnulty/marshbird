@@ -5,18 +5,17 @@ import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  // styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // title = 'marshbird';
-  // logoDisplay = true;
+  title = 'marshbird';
+  logoDisplay = true;
   // gameNav: Array<{
   //   id: string;
   //   name: number;
   // }> = []
   constructor(private route: ActivatedRoute, private router: Router) { }
   ngOnInit(): void {
-        window.location.href = 'https://marshbirdgames.square.site/'
 
     // let game: any;
     // for (game in GAME_DATA) {
@@ -24,12 +23,11 @@ export class AppComponent {
     // }
   }
   ngOnChanges(): void {
-    window.location.href = 'https://marshbirdgames.square.site/'
 
-  //   if (this.router.url === '/') {
-  //     this.logoDisplay = false;
-  //   } else {
-  //     this.logoDisplay = true;
-  //   }
+    if (this.router.url === '/') {
+      this.logoDisplay = false;
+    } else {
+      this.logoDisplay = true;
+    }
   }
 }

@@ -1,15 +1,15 @@
 .banner {
     height: 350px;
     width: 100%;
-    background-image: url('/assets/images/tablut-banner.jpg');
+    background-image: url('/assets/images/game-banners/jackals2.jpg');
     background-size:     cover;                      
     background-repeat:   no-repeat;
-    background-position: center center;  
+    background-position: top center;  
     text-align: end;
   }
   .title {
     width: 50%;
-    background-color: rgba(39, 21, 3, 0.75);
+    background-color: rgba(31, 25, 19, 0.75);
     display:inline-block;
     height: 100%;
     text-align: center;
@@ -23,7 +23,8 @@
     
 }
 .page-content {
-    background-color: var(--grape);
+    /* background-color: var(--grape); */
+    background: linear-gradient(180deg, #000000 0%, #201000 14%, #4e1835 76%, #330e3d 92%, #000000 100%);
     min-height: 500px;
     color: var(--cream);
     border-top: 3px solid black;
@@ -46,14 +47,15 @@
     background: var(--grape);
     color: white;
     font-family: griffy;
-    
-        box-shadow: 2px 7px 15px -2px black;
-        min-height: 200px;
+    box-shadow: 2px 7px 15px -2px black;
+    min-height: 300px;
     background-size:  cover;
     background-repeat: no-repeat;
     background-position: top;
     width: 90%;
     padding: 0;
+    display: flex;
+    align-items: end;
 }
 .subtitle {
     color: var(--butter);
@@ -61,9 +63,10 @@
 }
 .mat-grid-tile-content {
     align-items: flex-start !important;
-
+    
 }
 .card-header {
     padding: 10px 0 0;
     background: rgba(0, 0, 0, .8 );
+    width: 100%;
 }

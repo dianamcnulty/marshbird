@@ -1,9 +1,9 @@
 <!-- Toolbar -->
-<div class="toolbar" role="banner">
+<div class="toolbar" role="banner" >
 
-  <a href="/"> <img width="40" id="site-logo" alt="Marsh Bird Games"
-      src="/assets/images/logo-wide-transparent-white.png" /></a>
-  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="icon-button with a menu">
+  <a href="https://marshbirdgames.square.site/"> <img width="40" id="site-logo" alt="Marsh Bird Games"
+      src="/assets/images/logo-wide-transparent-white.png" /></a> 
+  <!-- <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="icon-button with a menu">
     <mat-icon>menu</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
@@ -14,7 +14,7 @@
     <a *ngFor="let game of gameNav" routerLink="/game/{{game.id}}" routerLinkActive="active">
       <button mat-menu-item>
         <span>{{game.name}}</span>
-      </button></a>
+      </button></a>  -->
     <!-- <a routerLink="/game/fox-and-geese" routerLinkActive="active"><button mat-menu-item>
         <span>Fox & Geese</span>
       </button></a>
@@ -29,18 +29,18 @@
       <button mat-menu-item>
         <h2>About</h2>
       </button> -->
-  </mat-menu>
+<!-- </mat-menu> -->
 </div>
 
-<div class="content" role="main">
+<div class="content" role="main"> 
 
   <!-- <div class="banner">
     <img src="/assets/images/gradient.jpg" alt="gold gradient">
     
   </div> -->
-  <div class="content-container">
+ <div class="content-container">
     <router-outlet></router-outlet>
-  </div>
+ </div>
   <!-- Footer -->
   <!-- <footer>
     <div>some footer stuff</div>
