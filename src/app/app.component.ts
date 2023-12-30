@@ -16,6 +16,8 @@ export class AppComponent {
   // }> = []
   constructor(private route: ActivatedRoute, private router: Router) { }
   ngOnInit(): void {
+    console.log('app onInit')
+
         window.location.href = 'https://marshbirdgames.square.site/'
 
     // let game: any;
@@ -24,6 +26,7 @@ export class AppComponent {
     // }
   }
   ngOnChanges(): void {
+    console.log('app onChange')
     window.location.href = 'https://marshbirdgames.square.site/'
 
   //   if (this.router.url === '/') {

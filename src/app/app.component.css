@@ -42,7 +42,7 @@
     height: 60px;
     display: flex;
     align-items: center;
-    background: black;
+    background: linear-gradient(180deg, #111111 85%, var(--grape) 100%);
     color: black;
     font-weight: 600;
     height: 80px;
@@ -256,7 +256,10 @@
     z-index: -10;
     width: 1920px;
   }
+  /* .content {
+    background: linear-gradient(180deg, #000000 3%, #201000 7%, #4e1835 49%, #000000 100%);
 
+  } */
   /* Responsive Styles */
   @media screen and (max-width: 767px) {
     .card-container > *:not(.circle-link) ,
