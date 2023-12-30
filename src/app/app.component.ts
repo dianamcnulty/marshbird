@@ -8,24 +8,28 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'marshbird';
-  logoDisplay = true;
-  gameNav: Array<{
-    id: string;
-    name: number;
-  }> = []
+  // title = 'marshbird';
+  // logoDisplay = true;
+  // gameNav: Array<{
+  //   id: string;
+  //   name: number;
+  // }> = []
   constructor(private route: ActivatedRoute, private router: Router) { }
   ngOnInit(): void {
-    let game: any;
-    for (game in GAME_DATA) {
-      this.gameNav.push({ name: GAME_DATA[game].name, id: game });
-    }
+        window.location.href = 'https://marshbirdgames.square.site/'
+
+    // let game: any;
+    // for (game in GAME_DATA) {
+    //   this.gameNav.push({ name: GAME_DATA[game].name, id: game });
+    // }
   }
   ngOnChanges(): void {
-    if (this.router.url === '/') {
-      this.logoDisplay = false;
-    } else {
-      this.logoDisplay = true;
-    }
+    window.location.href = 'https://marshbirdgames.square.site/'
+
+  //   if (this.router.url === '/') {
+  //     this.logoDisplay = false;
+  //   } else {
+  //     this.logoDisplay = true;
+  //   }
   }
 }

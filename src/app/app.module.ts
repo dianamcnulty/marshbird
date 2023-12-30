@@ -20,6 +20,7 @@ import { LandingComponent } from './landing/landing.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
+import { RedirectComponent } from './redirect/redirect.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {MatCardModule} from '@angular/material/card';
     InstructionsComponent,
     BuyGameComponent,
     LandingComponent,
-    CarouselComponent
+    CarouselComponent,
+    RedirectComponent
   ],
   imports: [
     BrowserModule,
