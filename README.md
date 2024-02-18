@@ -26,3 +26,12 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
+------
+## Deployment: 
+
+1) commit your code
+2) run build script `npm run build`
+3) run deploy script `npm run deploy`
+4) go to github and navigate to pages in the setting tab
+5) update the custom url to `www.marshbirdgames.com` and make sure "enforce https" is checked off
+6) wait a few minutes and test www and non www urls
