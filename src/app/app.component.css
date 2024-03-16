@@ -127,7 +127,24 @@
     min-width: 30%;
     position: relative;
   }
+  .etsy-link {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 
+    margin: 20px 50px;
+}
+.socials {
+  margin: 3px 10px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.social-icon{
+  height:24px;
+  margin: 3px;
+
+}
   .card.card.highlight-card span {
     margin-left: 60px;
   }
@@ -147,16 +164,7 @@
     z-index: -10;
   }
 
-  a,
-  a:visited,
-  a:hover {
-    color: #1976d2;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: #125699;
-  }
+ 
 
   .terminal {
     position: relative;
@@ -216,7 +224,7 @@
     align-items: center;
     line-height: 20px;
     color: white;
-    background-color: black;
+    background-color: #201000;
   }
 
   footer a {

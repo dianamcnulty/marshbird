@@ -1,36 +1,54 @@
 .banner {
     height: 350px;
     width: 100%;
-    background-image: url('/assets/images/tablut-banner.jpg');
+    background-image: url('/assets/images/tablut_banner.png');
     background-size:     cover;                      
     background-repeat:   no-repeat;
-    background-position: center center;  
-    text-align: end;
+    background-position: center top;  
+    text-align: start;
+    display: flex;
   }
-  .title {
+.title {
     width: 50%;
-    background-color: rgba(39, 21, 3, 0.75);
+    /* background-color: rgba(39, 21, 3, 0.75); */
+    background-color: rgba(0, 0, 0, 0.1);
     display:inline-block;
     height: 100%;
     text-align: center;
     align-items: center;
     color: var(--cream);
 }
+.subtitle {
+    width: 50%;
+    display:inline-block;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sub-button{
+    min-height: 48px;
+    min-width: 83px;
+}
 .title h2 {
-    font-size: 45px;
+    font-size: 75px;
     position: relative;
     top: 10%;
     
 }
 .page-content {
-    background-color: var(--grape);
-    min-height: 500px;
+    /* background-color: var(--grape); */
+    background: linear-gradient(180deg, #000000 0%, #201000 13%, var(--grape) 100%);
+    min-height: 400px;
     color: var(--cream);
     border-top: 3px solid black;
 
 }
 .splash-page {
+    
     text-align: center;
+   
 }
 .showcase-button  {
     box-shadow: 2px 7px 15px -2px black;
@@ -66,4 +84,32 @@
 .card-header {
     padding: 10px 0 0;
     background: rgba(0, 0, 0, .8 );
+}
+@media screen and (max-width: 800px) {
+    .banner {
+        flex-direction: column;
+    }
+    .title{
+        width: 100%;
+
+    }
+    .title h2 {
+        margin: 25px;
+        font-size: 50px;
+        position: relative;
+        top: 10%;
+        
+    }
+    .subtitle{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 350px) {
+    .subtext{
+        display: none;
+    }
+    .sub-button{
+        max-width: ;
+    }
+    
 }

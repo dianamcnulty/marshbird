@@ -3,19 +3,19 @@
 
    <a href="https://marshbirdgames.square.site/"> <img width="40" id="site-logo" alt="Marsh Bird Games"
       src="/assets/images/logo-wide-transparent-white.png" /></a>
-  <!-- <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="icon-button with a menu">
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="icon-button with a menu">
     <mat-icon>menu</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
     <button mat-menu-item>
       <h2>Games</h2>
-    </button> -->
-<!-- 
+    </button>
+
     <a *ngFor="let game of gameNav" routerLink="/game/{{game.id}}" routerLinkActive="active">
       <button mat-menu-item>
         <span>{{game.name}}</span>
-      </button></a> -->
-    <!-- <a routerLink="/game/fox-and-geese" routerLinkActive="active"><button mat-menu-item>
+      </button></a> 
+    <a routerLink="/game/fox-and-geese" routerLinkActive="active"><button mat-menu-item>
         <span>Fox & Geese</span>
       </button></a>
       <a routerLink="game/senet" routerLinkActive="active">
@@ -28,8 +28,8 @@
       </button>
       <button mat-menu-item>
         <h2>About</h2>
-      </button> -->
-  <!-- </mat-menu>-->
+      </button>
+  </mat-menu>
  </div>
 
 <div class="content" role="main">
@@ -38,11 +38,20 @@
     <img src="/assets/images/gradient.jpg" alt="gold gradient">
     
   </div> -->
-  <!-- <div class="content-container"> -->
-    <router-outlet></router-outlet>
-  <!-- </div> -->
-  <!-- Footer -->
-  <!-- <footer>
-    <div>some footer stuff</div>
-  </footer> -->
+  <div class="content-container">
+    <app-landing></app-landing>
+    <!-- <router-outlet></router-outlet> -->
+  </div> 
+
+<footer class="footer">
+  <div class="etsy-link">    <a href="https://marshbirdgames.etsy.com" target="_blank">Also Available on Etsy</a>
+  </div>
+  <div class="socials">
+    <!-- <mat-icon fontIcon="facebook"></mat-icon> -->
+    <a href="https://facebook.com/marshbirdgames" target="_blank"><img class="social-icon" src="/assets/images/social/facebook.png"></a>
+    <a href="https://instagram.com/marshbirdgames" target="_blank"> <img class="social-icon" src="/assets/images/social/instagram.png"></a>
+      <a href="https://pinterest.com/marshbirdgames" target="_blank"> <img class="social-icon" src="/assets/images/social/pinterest.png"></a>
+
+  </div>
+  </footer>
 </div>

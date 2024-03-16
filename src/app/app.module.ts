@@ -21,6 +21,8 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import { RedirectComponent } from './redirect/redirect.component';
+// import { NgIconsModule } from '@ng-icons/core';
+// import FontAwesome from '@ng-icons/font-awesome';
 
 @NgModule({
   declarations: [
