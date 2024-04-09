@@ -1,0 +1,32 @@
+.title {
+    padding: 50px;
+}
+::ng-deep .mat-tab-label-content{
+    font-size: 20px;
+   font-family:  "PT Serif", serif;
+   font-weight: 700;
+   color: var(--cream)
+}
+::ng-deep .mat-tab-header-pagination-chevron {
+    border-color: var(--butter);
+    border-width: 3px 3px 0 0 !important;
+}
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.mat-grid-tile-content{
+    width: 100%;
+}
+.mat-grid-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* .photo-tile {
+    height: 100% !important; 
+    display:flex;
+    justify-content: center;
+
+  } */

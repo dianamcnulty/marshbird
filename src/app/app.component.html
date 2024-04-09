@@ -1,17 +1,17 @@
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
 
-   <a href="https://marshbirdgames.square.site/"> <img width="40" id="site-logo" alt="Marsh Bird Games"
+   <a href="https://marshbirdgames.com/"> <img width="40" id="site-logo" alt="Marsh Bird Games"
       src="/assets/images/logo-wide-transparent-white.png" /></a>
   <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="icon-button with a menu">
     <mat-icon>menu</mat-icon>
   </button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item>
-      <h2>Games</h2>
+  <mat-menu #menu="matMenu" class="nav-open">
+    <button mat-menu-item >
+      <h3 >Shop</h3>
     </button>
 
-    <a *ngFor="let game of gameNav" routerLink="/game/{{game.id}}" routerLinkActive="active">
+    <!-- <a *ngFor="let game of gameNav" routerLink="/game/{{game.id}}" routerLinkActive="active">
       <button mat-menu-item>
         <span>{{game.name}}</span>
       </button></a> 
@@ -21,13 +21,17 @@
       <a routerLink="game/senet" routerLinkActive="active">
       <button mat-menu-item>
         <span>Senet</span>
-      </button></a>
+      </button></a> -->
       
       <button mat-menu-item>
-        <h2>Game Instructions</h2>
+        <h3>History & Instructions</h3>
       </button>
+      <a *ngFor="let game of gameNav" routerLink="/how-to-play/{{game.id}}" routerLinkActive="active">
+        <button mat-menu-item>
+          <span>{{game.name}}</span>
+        </button></a> 
       <button mat-menu-item>
-        <h2>About</h2>
+        <h3>About Marshbird Games</h3>
       </button>
   </mat-menu>
  </div>
@@ -39,8 +43,8 @@
     
   </div> -->
   <div class="content-container">
-    <app-landing></app-landing>
-    <!-- <router-outlet></router-outlet> -->
+    <!-- <app-landing></app-landing> -->
+    <router-outlet></router-outlet>
   </div> 
 
 <footer class="footer">
@@ -48,9 +52,9 @@
   </div>
   <div class="socials">
     <!-- <mat-icon fontIcon="facebook"></mat-icon> -->
-    <a href="https://facebook.com/marshbirdgames" target="_blank"><img class="social-icon" src="/assets/images/social/facebook.png"></a>
-    <a href="https://instagram.com/marshbirdgames" target="_blank"> <img class="social-icon" src="/assets/images/social/instagram.png"></a>
-      <a href="https://pinterest.com/marshbirdgames" target="_blank"> <img class="social-icon" src="/assets/images/social/pinterest.png"></a>
+    <a href="https://facebook.com/marshbirdgames" target="_blank"><img class="social-icon" src="/assets/images/social/facebook-y.png"></a>
+    <a href="https://instagram.com/marshbirdgames" target="_blank"> <img class="social-icon" src="/assets/images/social/instagram-y.png"></a>
+      <!-- <a href="https://pinterest.com/marshbirdgames" target="_blank"> <img class="social-icon" src="/assets/images/social/pinterest.png"></a> -->
 
   </div>
   </footer>

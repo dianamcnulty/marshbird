@@ -14,39 +14,65 @@ $material-design-icons-font-directory-path: '~material-design-icons-iconfont/dis
 $mat-theming-primary: mat.define-palette($md-shiraz);
 $mat-theming-accent: mat.define-palette($md-shiraz, 400, 50, 300 );
 $mat-theming-warn: mat.define-palette($md-shiraz);
+$mat-theming-primary: mat.define-palette($ancient);
+$mat-theming-accent: mat.define-palette($ancient, 700, 300, 600 );
+$mat-theming-warn: mat.define-palette($ancient);
 
 $mat-theming-theme: mat.define-light-theme($mat-theming-primary, $mat-theming-accent, $mat-theming-warn);
 @include mat.all-component-themes($mat-theming-theme);
 :root {
-    --grape: #3e0421;
-    --gold: #ffd955;
-    --cat-tail: #6a3501;
-    --butter: #feecac;
+    // --grape: #3e0421;
+    // --gold: #ffd955;
+    // --cat-tail: #a68319;
+    // --butter: #feecac;
+    // --cream: #f4e8cc;
+    // //--chocolate: #271503;
+    --chocolate: #201000;
+    --rust:#5e1409;
+    --burnt-sienna: #9e4A1c;
+    --yellow-ochre:#cc962f;
+    --sand: #b8975a;
+    --grass:#679552;
+    --turquoise:#5da99f;
+    --navy:#0c172e;
+    --grape: #5e1409;
+    --gold: #cc962f;
+    --cat-tail: #9e4A1c;
+    --butter: #dac7a6;
     --cream: #f4e8cc;
-    --chocolate: #271503;
+    // --chocolate: #0c172e;
 }
 
 html,
 body {
     min-height: 100vh;
-    background-color: var(--grape);
-    color: var(--cream)
+    height:100%;
+    background-color: var(--chocolate
+    );
+    // background: linear-gradient(180deg, var(--chocolate) 90%, var(--sand) 93% );
+
+    // background: linear-gradient(180deg, black 0%, var(--chocolate) 50%, var(--grape) 76%, var(--chocolate) 95%);
+    color: var(--navy);
+    font-size: 20px;
 }
 
-
+h1 {
+    font-size: 75px;
+}
 h1, h2  {
     font-family: Griffy, Garamond, 'Times New Roman', Times, serif;
     font-weight: 400;
+}
+h2 {
+    font-size: 50px;
 }
 h3 {
     font-size: 22px;
     font-family: "Playfair Display";
     font-weight: 400;
-    color: white;
+    // color: white;
 }
-h2 {
-    font-size: 2em;
-}
+
 // body { margin: 0; font-family: 'Alegreya Sans', Garamond, 'Times New Roman', Times, serif, sans-serif; }
 body { margin: 0; font-family: "PT Serif", serif; }
 

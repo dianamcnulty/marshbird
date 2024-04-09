@@ -1,0 +1,50 @@
+.game-card {
+    /* margin: 10px; */
+    /* color: white; */
+
+box-shadow: 2px 7px 15px -2px black;
+    height: 250px;
+    background-size:  cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    max-width: 400px;
+    padding: 0;
+}
+.mat-card {
+    background-color: black;
+    color: var(--butter);
+    overflow: hidden;
+    font-family: "Playfair Display";
+    margin: 15px;
+
+}
+/* .mat-card-title{
+    background-color: black;
+    width: 100%;
+} */
+.card-header {
+    justify-content: center;
+    padding: 10px 0 0;
+    background: rgba(0, 0, 0, .8 );
+
+    font-weight: 400;
+    color: var(--cream);
+}
+::ng-deep  .mat-card-title h3 {
+    font-size: 35px;
+    margin: 15px;
+
+}
+.mat-card>.mat-card-actions:last-child {
+    display: flex;
+   
+    margin-left:0;
+    padding-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, .8);
+    width: 100%;
+    font-family: "PT Serif", serif;
+    justify-content: space-evenly;
+    color: var(--cream);
+}

@@ -2,10 +2,13 @@ export interface GameSchema {
   id: string;
   name: string;
   bannerImgPath: string | undefined;
+  tileImgPath: string | undefined;
   instructions: Inscructions;
   history: History;
   purchase: PurchaseDetails;
-
+  available: boolean;
+  categories: Array<string>;
+  description: string;
 };
 export interface Inscructions {
   description: string,

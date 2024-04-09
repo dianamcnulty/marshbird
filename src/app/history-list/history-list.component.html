@@ -1,0 +1,47 @@
+<div class="title">
+    <h2>Learn More About the Games</h2>
+</div>
+<!-- <div>
+    <mat-button-toggle-group #colorToggle="matButtonToggleGroup"
+                             value="primary"
+                             aria-label="Change color">
+      <mat-button-toggle value="primary">Primary</mat-button-toggle>
+      <mat-button-toggle value="accent">Accent</mat-button-toggle>
+      <mat-button-toggle value="warn">Warn</mat-button-toggle>
+    </mat-button-toggle-group>
+    <span class="example-button-toggle-label">Color</span>
+  </div>
+  
+  <div>
+    <mat-button-toggle-group #backgroundColorToggle="matButtonToggleGroup"
+                             value="primary"
+                             aria-label="Change color">
+      <mat-button-toggle value="primary">Primary</mat-button-toggle>
+      <mat-button-toggle value="accent">Accent</mat-button-toggle>
+      <mat-button-toggle value="warn">Warn</mat-button-toggle>
+    </mat-button-toggle-group>
+    <span class="example-button-toggle-label">Background Color</span>
+  </div> -->
+<div >
+    <!-- <mat-tab-group color="accent" dynamicHeight id="tab-group"> -->
+        <!-- <mat-tab label="Egypt & Middle East">
+            <mat-grid-list cols={{breakpoint}} rowHeight="300px">
+                <mat-grid-tile *ngFor="let game of gameData.egypt">
+
+                    <app-photo-tile gameId={{game.id}} style="    height: 100%;
+                width: 100%;">
+                    </app-photo-tile>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </mat-tab> -->
+        <!-- <mat-tab *ngFor="let category of gameData | keyvalue" label="{{category.value.displayName}}"> -->
+            <mat-grid-list cols={{breakpoint}} rowHeight="300px">
+                <mat-grid-tile *ngFor="let game of gameData">
+
+                    <app-photo-tile  gameId={{game.id}} style="width: 100%;">
+                    </app-photo-tile>
+                </mat-grid-tile>
+            </mat-grid-list>
+        <!-- </mat-tab> -->
+    <!-- </mat-tab-group> -->
+</div>
