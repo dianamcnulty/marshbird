@@ -6,24 +6,42 @@
 @import './pallette.scss';
 
 $mat-theming-primary: mat.define-palette($md-shiraz);
-$mat-theming-accent: mat.define-palette($md-shiraz, 200, 50, 300 );
+$mat-theming-accent: mat.define-palette($md-shiraz, 400, 50, 300 );
 $mat-theming-warn: mat.define-palette($md-shiraz);
+$mat-theming-primary: mat.define-palette($ancient);
+$mat-theming-accent: mat.define-palette($ancient, 700, 300, 600 );
+$mat-theming-warn: mat.define-palette($ancient);
 
 $mat-theming-theme: mat.define-light-theme($mat-theming-primary, $mat-theming-accent, $mat-theming-warn);
 @include mat.all-component-themes($mat-theming-theme);
 :root {
-    --grape: #3e0421;
-    --gold: #ffd955;
-    --cat-tail: #6a3501;
-    --butter: #feecac;
+    // --grape: #3e0421;
+    // --gold: #ffd955;
+    // --cat-tail: #a68319;
+    // --butter: #feecac;
+    // --cream: #f4e8cc;
+    // //--chocolate: #271503;
+    --chocolate: #201000;
+    --rust:#5e1409;
+    --burnt-sienna: #9e4A1c;
+    --yellow-ochre:#cc962f;
+    --sand: #b8975a;
+    --grass:#679552;
+    --turquoise:#5da99f;
+    --navy:#0c172e;
+    --grape: #5e1409;
+    --gold: #cc962f;
+    --cat-tail: #9e4A1c;
+    --butter: #dac7a6;
     --cream: #f4e8cc;
-    --chocolate: #271503;
+    // --chocolate: #0c172e;
 }
 
 html,
 body {
     min-height: 100vh;
-    background-color: var(--grape);
+    // background-color: var(--grape);
+    background-color: var(--chocolate);
     color: var(--cream)
 }
 
