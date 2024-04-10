@@ -14,7 +14,7 @@ const routes: Routes = [
   {
     path: '',
     canActivate: [RedirectService],
-    component: RedirectService,
+    component: RedirectComponent,
     data: {
       externalUrl: 'https://marshbirdgames.square.site/'
     }
@@ -22,7 +22,15 @@ const routes: Routes = [
 {
   path: 'defaultsite',
   canActivate: [RedirectService],
-  component: RedirectService,
+  component: RedirectComponent,
+  data: {
+    externalUrl: 'https://marshbirdgames.square.site/'
+  }
+},
+{
+  path: 'marshbird',
+  canActivate: [RedirectService],
+  component: RedirectComponent,
   data: {
     externalUrl: 'https://marshbirdgames.square.site/'
   }
