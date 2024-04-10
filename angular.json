@@ -57,6 +57,9 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "github-pages": {
+              "baseHref": "/marshbird/"
             }
           },
           "defaultConfiguration": "production"
