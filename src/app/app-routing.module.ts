@@ -4,12 +4,29 @@ import { AppComponent } from './app.component';
 import { GameInfoComponent } from './game-info/game-info.component';
 import { LandingComponent } from './landing/landing.component';
 import { RedirectComponent } from './redirect/redirect.component';
+import { RedirectService } from './redirect.service';
 
 const routes: Routes = [
-  { path: 'game/:gameid', component: GameInfoComponent},
-  { path: 'game/:gameid/:tab', component: GameInfoComponent},
-  { path: '', component: RedirectComponent},
-  { path: 'defaultsite', component: RedirectComponent},
+  // { path: 'game/:gameid', component: GameInfoComponent},
+  // { path: 'game/:gameid/:tab', component: GameInfoComponent},
+  // { path: '', component: AppComponent},
+  // { path: 'defaultsite', component: RedirectComponent},
+  {
+    path: '',
+    canActivate: [RedirectService],
+    component: RedirectService,
+    data: {
+      externalUrl: 'https://marshbirdgames.square.site/'
+    }
+},
+{
+  path: 'defaultsite',
+  canActivate: [RedirectService],
+  component: RedirectService,
+  data: {
+    externalUrl: 'https://marshbirdgames.square.site/'
+  }
+},
   { path: '**', redirectTo: '' }
 ];
 

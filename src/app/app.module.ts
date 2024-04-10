@@ -21,6 +21,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import { RedirectComponent } from './redirect/redirect.component';
+import { RedirectService } from './redirect.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { RedirectComponent } from './redirect/redirect.component';
     BuyGameComponent,
     LandingComponent,
     CarouselComponent,
-    RedirectComponent
+    RedirectComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +46,7 @@ import { RedirectComponent } from './redirect/redirect.component';
     MatGridListModule,
     MatCardModule
   ],
-  providers: [],
+  providers: [RedirectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

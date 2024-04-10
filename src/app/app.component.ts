@@ -18,7 +18,7 @@ export class AppComponent {
   ngOnInit(): void {
     console.log('app onInit')
 
-        window.location.href = 'https://marshbirdgames.square.site/'
+        // window.location.href = 'https://marshbirdgames.square.site/'
 
     // let game: any;
     // for (game in GAME_DATA) {
@@ -27,7 +27,7 @@ export class AppComponent {
   }
   ngOnChanges(): void {
     console.log('app onChange')
-    window.location.href = 'https://marshbirdgames.square.site/'
+    // window.location.href = 'https://marshbirdgames.square.site/'
 
   //   if (this.router.url === '/') {
   //     this.logoDisplay = false;

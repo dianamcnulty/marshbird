@@ -42,8 +42,8 @@
     height: 60px;
     display: flex;
     align-items: center;
-    background: linear-gradient(180deg, #111111 85%, var(--grape) 100%);
-    color: black;
+    background: linear-gradient(180deg, var(--chocolate) 85%, var(--grape) 100%);
+    color: var(--cream);
     font-weight: 600;
     height: 80px;
     border-bottom: solid 2px var(--grape);
