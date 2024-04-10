@@ -21,7 +21,6 @@ import { LandingComponent } from './landing/landing.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
-import { RedirectComponent } from './redirect/redirect.component';
 import { HistoryListComponent } from './history-list/history-list.component';
 import { PhotoTileComponent } from './photo-tile/photo-tile.component';
 // import { NgIconsModule } from '@ng-icons/core';
@@ -36,7 +35,6 @@ import { PhotoTileComponent } from './photo-tile/photo-tile.component';
     BuyGameComponent,
     LandingComponent,
     CarouselComponent,
-    RedirectComponent,
     PhotoTileComponent,
     HistoryListComponent
   ],

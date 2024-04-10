@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { GameInfoComponent } from './game-info/game-info.component';
 import { LandingComponent } from './landing/landing.component';
-import { RedirectComponent } from './redirect/redirect.component';
 import { HistoryListComponent } from './history-list/history-list.component';
 
 const routes: Routes = [
