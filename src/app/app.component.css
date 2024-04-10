@@ -29,7 +29,13 @@
   p {
     margin: 0;
   }
-
+  ::ng-deep .nav-open {
+    min-width: 120px !important;
+    overflow: hidden !important;
+  }
+  .menu-child {
+    padding-left: 35px;
+  }
   .spacer {
     flex: 1;
   }
@@ -43,7 +49,7 @@
     display: flex;
     align-items: center;
     background: linear-gradient(180deg, var(--chocolate) 85%, var(--grape) 100%);
-    color: var(--cream);
+    color: black;
     font-weight: 600;
     height: 80px;
     border-bottom: solid 2px var(--grape);
@@ -127,7 +133,24 @@
     min-width: 30%;
     position: relative;
   }
+  .etsy-link {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 
+    margin: 20px 50px;
+}
+.socials {
+  margin: 3px 10px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.social-icon{
+  height:24px;
+  margin: 3px;
+
+}
   .card.card.highlight-card span {
     margin-left: 60px;
   }
@@ -147,16 +170,7 @@
     z-index: -10;
   }
 
-  a,
-  a:visited,
-  a:hover {
-    color: #1976d2;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: #125699;
-  }
+ 
 
   .terminal {
     position: relative;
@@ -212,13 +226,20 @@
   }
 
   footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;    
+    width: 100%;
     display: flex;
     align-items: center;
     line-height: 20px;
     color: white;
-    background-color: black;
-  }
+    /* background-color: #201000; */
+    /* background: linear-gradient(180deg, var(--sand) 5%, var(--yellow-ochre) ); */
 
+    /* background: linear-gradient(180deg, var(--grass) 5%, var(--turquoise) ); */
+    /* border-top: 5px solid var(--rust); */
+  }
   footer a {
     display: flex;
     align-items: center;

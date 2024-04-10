@@ -4,30 +4,17 @@ import { AppComponent } from './app.component';
 import { GameInfoComponent } from './game-info/game-info.component';
 import { LandingComponent } from './landing/landing.component';
 import { RedirectComponent } from './redirect/redirect.component';
-import { RedirectService } from './redirect.service';
+import { HistoryListComponent } from './history-list/history-list.component';
 
 const routes: Routes = [
-  // { path: 'game/:gameid', component: GameInfoComponent},
-  // { path: 'game/:gameid/:tab', component: GameInfoComponent},
-  // { path: '', component: AppComponent},
+  { path: 'game/:gameid', component: GameInfoComponent},
+  { path: 'how-to-play/:gameid', component: GameInfoComponent},
+  { path: 'game/:gameid/:tab', component: GameInfoComponent},
+  { path: 'learn', component: HistoryListComponent},
+  { path: '', component: LandingComponent},
+  {path: '', component: AppComponent},
   // { path: 'defaultsite', component: RedirectComponent},
-  {
-    path: '',
-    canActivate: [RedirectService],
-    component: RedirectService,
-    data: {
-      externalUrl: 'https://marshbirdgames.square.site/'
-    }
-},
-{
-  path: 'defaultsite',
-  canActivate: [RedirectService],
-  component: RedirectService,
-  data: {
-    externalUrl: 'https://marshbirdgames.square.site/'
-  }
-},
-  { path: '**', redirectTo: '' }
+  // { path: '**', redirectTo: '' }
 ];
 
 @NgModule({

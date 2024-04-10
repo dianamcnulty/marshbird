@@ -2,6 +2,9 @@ export const GAME_DATA = {
   'fox-and-geese': {
     id: 'fox-and-geese',
     name: 'Fox & Geese',
+    categories: ['medieval', 'victorian'],
+    tileImgPath: '/assets/images/tile-images/puluc.jpg',
+    description: 'A traditional game from medieval Europe',
     instructions: {
       players: 2,
       description: "Fox and Geese is an asymmetrical game for 2 players. That is, each player has a different number of pieces, a different setup, and a different goal. The fox's goal is to capture all the geese, and the goal for the geese is to trap the fox.. This game dates back to the middle ages, and as with most ancient games, the rules have evolved over time and there are several variations. This is just one example of how to play, but feel free to experiment with other rules. Just make sure all the players agree on the rules before you start. ",
@@ -42,6 +45,9 @@ export const GAME_DATA = {
   'tablut': {
     id: 'tablut',
     name: 'Tablut',
+    categories: ['medieval', 'norse'],
+    tileImgPath: '/assets/images/tile-images/puluc.jpg',
+    description: 'A varient of hnefetafl from the time of the Vikings',
     instructions: {
       players: 2,
       description: "Tablut is a two player war game that evolved from Hnefetafl and other Tafl family games. It's classified as a war game, but it's played assymentrically. Which means that each player has a different number of pieces and different objectives.",
@@ -109,6 +115,10 @@ as you see in the picture.
   'senet': {
     id: 'senet',
     name: 'Senet',
+    categories: ['egypt'],
+    tileImgPath: '/assets/images/tile-images/senet.jpg',
+    description: 'An Ancient Egyptian game about the journey of rebirth',
+
     instructions: {
       players: 2,
       description: `
@@ -207,6 +217,9 @@ as you see in the picture.
   'mehen': {
     id: 'mehen',
     name: 'Mehen',
+    categories: ['egypt'],
+    description: 'A race game, named for an Egyptian snake god who protects Re in the underworld',
+    tileImgPath: '/assets/images/tile-images/mehen.jpg',
     instructions: {
       players: '2 - 6',
       description: `

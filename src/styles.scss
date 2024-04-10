@@ -1,10 +1,16 @@
 
 @use '@angular/material' as mat;
 @import '@angular/material/theming';
+
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Griffy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 @include mat-core();
 @import './pallette.scss';
+$material-design-icons-font-directory-path: '~material-design-icons-iconfont/dist/fonts/';
 
+@import '~material-design-icons-iconfont/src/material-design-icons';
 $mat-theming-primary: mat.define-palette($md-shiraz);
 $mat-theming-accent: mat.define-palette($md-shiraz, 400, 50, 300 );
 $mat-theming-warn: mat.define-palette($md-shiraz);
@@ -40,23 +46,54 @@ $mat-theming-theme: mat.define-light-theme($mat-theming-primary, $mat-theming-ac
 html,
 body {
     min-height: 100vh;
-    // background-color: var(--grape);
-    background-color: var(--chocolate);
-    color: var(--cream)
+    height:100%;
+    background-color: var(--chocolate
+    );
+    // background: linear-gradient(180deg, var(--chocolate) 90%, var(--sand) 93% );
+
+    // background: linear-gradient(180deg, black 0%, var(--chocolate) 50%, var(--grape) 76%, var(--chocolate) 95%);
+    color: var(--navy);
+    font-size: 20px;
 }
 
-
-h1, h2, h3 {
+h1 {
+    font-size: 75px;
+}
+h1, h2  {
     font-family: Griffy, Garamond, 'Times New Roman', Times, serif;
     font-weight: 400;
 }
 h2 {
-    font-size: 2em;
+    font-size: 50px;
 }
-body { margin: 0; font-family: 'Alegreya Sans', Garamond, 'Times New Roman', Times, serif, sans-serif; }
+h3 {
+    font-size: 22px;
+    font-family: "Playfair Display";
+    font-weight: 400;
+    // color: white;
+}
+
+// body { margin: 0; font-family: 'Alegreya Sans', Garamond, 'Times New Roman', Times, serif, sans-serif; }
+body { margin: 0; font-family: "PT Serif", serif; }
+
 a {
-    color: white;
+    color: #fff7d6;
+}
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #8e5e01;
 }
 .game-square {
     height:40px;
+}
+button {
+    font-family: "PT Serif", serif !important;
+    font-weight: 500;
+    font-size: 16px !important;
+    margin: 5px !important; 
 }

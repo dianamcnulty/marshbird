@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,7 +22,10 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import { RedirectComponent } from './redirect/redirect.component';
-import { RedirectService } from './redirect.service';
+import { HistoryListComponent } from './history-list/history-list.component';
+import { PhotoTileComponent } from './photo-tile/photo-tile.component';
+// import { NgIconsModule } from '@ng-icons/core';
+// import FontAwesome from '@ng-icons/font-awesome';
 
 @NgModule({
   declarations: [
@@ -33,9 +37,12 @@ import { RedirectService } from './redirect.service';
     LandingComponent,
     CarouselComponent,
     RedirectComponent,
+    PhotoTileComponent,
+    HistoryListComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     NoopAnimationsModule,
     MatTabsModule,
@@ -44,9 +51,12 @@ import { RedirectService } from './redirect.service';
     MatStepperModule,
     MatButtonModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    MatTabsModule
   ],
-  providers: [RedirectService],
+  exports: [
+    PhotoTileComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
