@@ -59,7 +59,7 @@
               "namedChunks": true
             },
             "github-pages": {
-              "baseHref": "/marshbird/"
+              "baseHref": "/"
             }
           },
           "defaultConfiguration": "production"
