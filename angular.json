@@ -59,7 +59,7 @@
               "namedChunks": true
             },
             "github-pages": {
-              "baseHref": "/"
+              "baseHref": "https://dianamcnulty.github.io/marshbird/"
             }
           },
           "defaultConfiguration": "production"
